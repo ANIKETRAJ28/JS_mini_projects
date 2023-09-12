@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+#card{
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+#card img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+#card h1{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+#card h5{
+    font-size: 22px;
+    margin: 10px 0px;
+    color: #bcbaba;
+}
+#card button{
+    font-size: 15px;
+    margin: 20px 5px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+}
+#btn{
+    background-color: cadetblue;
+    color: #ffffff;
+}
