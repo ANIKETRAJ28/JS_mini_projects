@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1>password generator</h1>
         <div dataCopyBtn class="passwordSection">
@@ -25,30 +27,31 @@
             </div>
             <input passStrengthSlider type="range" max="20" min="1" step="1" class="slider">
             <div>
-                <input type="checkbox">
-                <span class="uppercase">includes uppercase</span>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">includes uppercase</label>
             </div>
             <div>
-                <input type="checkbox">
-                <span class="lowercase">includes lowercase</span>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">includes lowercase</label>
             </div>
             <div>
-                <input type="checkbox">
-                <span class="numbers">includes numbers</span>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">includes numbers</label>
             </div>
             <div>
-                <input type="checkbox">
-                <span class="symbols">includes symbols</span>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">includes symbols</label>
             </div>
             <div class="passStrength">
                 <div class="strenght">strength</div>
                 <div class="strengthIndiacator"></div>
             </div>
-            <div class="generateButton">generate password</div>
+            <button class="generateButton">generate password</button>
         </div>
     </div>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
