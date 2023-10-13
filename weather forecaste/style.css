@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+
+*,
+*::after,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.visibility2 {
+    display: none;
+    align-items: center;
+    gap: 0.2vw;
+    margin-block: 1rem;
+}
+
+.visibility2>input {
+    width: 33vw;
+    height: 20px;
+    outline: none;
+    border: 1px solid #d6d5d5;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.visibility2 i {
+    font-size: 10px;
+}
+
+.visibility2>button {
+    background-color: #d6d5d5;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.visibility1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.weatherSearchSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    margin-block: 1rem;
+}
+
+.weatherSearchSection>button {
+    text-transform: capitalize;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.5rem;
+    border: none;
+    border-radius: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.weatherSearchSection>button:hover {
+    background-color: #d6d5d5;
+}
+
+.weatherDisplaySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    cursor: default;
+}
+
+.weatherDisplaySection>div>i {
+    font-size: 2rem;
+}
+
+.temperature {
+    font-size: 1rem;
+}
+
+.mainContainer {
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.weatherCondition {
+    display: flex;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    cursor: default;
+}
+
+.windspeed,
+.humidity,
+.clouds {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #d6d5d5;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherCondition {
+    font-size: 0.8rem;
+}
