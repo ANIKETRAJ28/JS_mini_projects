@@ -18,6 +18,7 @@ let visibility4 = document.querySelector(".visibility4");
 let city_name = "";
 flag.style.display = "none";
 visibility3.style.display = "none";
+weatherImg.style.display = "none";
 
 yourWeather.addEventListener("click", geoLocation);
 
@@ -79,6 +80,7 @@ async function fethchYourWeatherDetails(position) {
     clouds.textContent = `${data?.clouds?.all} %`;
     windspeed.textContent = `${data?.wind?.speed} m/s`;
     weather.textContent = data?.weather[0]?.main;
+    weatherImg.style.display = "block";
     weatherImg.src = `https://openweathermap.org/img/wn/${data?.weather?.[0]?.icon}.png`;
     flag.src = `https://flagcdn.com/144x108/${data?.sys?.country.toLowerCase()}.png`;
     flag.style.display = "block";
@@ -105,6 +107,7 @@ async function fethchWeatherDetails() {
     clouds.textContent = `${data?.clouds?.all} %`;
     windspeed.textContent = `${data?.wind?.speed} m/s`;
     weather.textContent = data?.weather[0]?.main;
+    weatherImg.style.display = "block";
     weatherImg.src = `https://openweathermap.org/img/wn/${data?.weather?.[0]?.icon}.png`;
     flag.src = `https://flagcdn.com/144x108/${data?.sys?.country.toLowerCase()}.png`;
     flag.style.display = "block";
